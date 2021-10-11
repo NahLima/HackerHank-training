@@ -1,6 +1,7 @@
 
 # explicação base para o exercicio 07
 
+from math import factorial
 listando = []
 
 while True:
@@ -47,8 +48,6 @@ while True:
 # ex: 4! = 4 · 3 · 2 · 1 = 24
 
 
-from math import factorial
-
 numero = int(input(">>> "))
 
 
@@ -59,7 +58,7 @@ def fatorial(numero):
 print(fatorial(numero))
 
 
-# fatorial 
+# fatorial
 
 def main():
     n = int(input("Digite o valor de n: "))
@@ -69,9 +68,10 @@ def main():
         fat = fat*i
         i = i + 1
 
-    print("O valor de %d! eh =" %n, fat)
+    print("O valor de %d! eh =" % n, fat)
 
-#-----
+
+# -----
 main()
 
 
@@ -96,6 +96,10 @@ while num:
 
 print(count)
 
-
-
-
+# ------------------------------------------------------
+# queue tasks exercicio 18 
+string = "racecar"
+if string == string[::-1]:
+    print(string + " is a palindrome")
+else:
+    print(string + " is NOT a palindrome")
